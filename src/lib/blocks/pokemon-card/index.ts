@@ -1,4 +1,4 @@
 import PokemonCard from './pokemon-card.svelte';
 
-export * from './pokemon';
+export * from './utils/pokemon';
 export { PokemonCard };

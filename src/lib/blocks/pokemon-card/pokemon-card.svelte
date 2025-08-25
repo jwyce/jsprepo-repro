@@ -1,7 +1,7 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
-	import { cache } from './cache';
-	import { getPokemon } from './pokemon';
+	import { cache } from './utils/cache';
+	import { getPokemon } from './utils/pokemon';
 
 	type PokemonCardProps = {
 		class?: string;

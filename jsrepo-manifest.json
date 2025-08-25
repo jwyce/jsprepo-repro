@@ -1,0 +1,94 @@
+{
+	"name": "@jwyce/test",
+	"version": "0.0.1",
+	"defaultPaths": {
+		"blocks": "$lib/blocks",
+		"ui": "$lib/components/ui",
+		"hooks": "$lib/hooks",
+		"utils": "$lib/utils"
+	},
+	"categories": [
+		{
+			"name": "ui",
+			"blocks": [
+				{
+					"name": "card",
+					"directory": "src/lib/components/ui/card",
+					"category": "ui",
+					"tests": false,
+					"docs": false,
+					"subdirectory": true,
+					"list": false,
+					"files": [
+						"card-action.svelte",
+						"card-content.svelte",
+						"card-description.svelte",
+						"card-footer.svelte",
+						"card-header.svelte",
+						"card-title.svelte",
+						"card.svelte",
+						"index.ts"
+					],
+					"localDependencies": [
+						"utils/utils"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"$lib/utils/utils": "{{utils/utils}}"
+					}
+				}
+			]
+		},
+		{
+			"name": "blocks",
+			"blocks": [
+				{
+					"name": "pokemon-card",
+					"directory": "src/lib/blocks/pokemon-card",
+					"category": "blocks",
+					"tests": false,
+					"docs": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.ts",
+						"pokemon-card.svelte"
+					],
+					"localDependencies": [
+						"ui/card"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"$lib/components/ui/card": "{{ui/card}}"
+					}
+				}
+			]
+		},
+		{
+			"name": "utils",
+			"blocks": [
+				{
+					"name": "utils",
+					"directory": "src/lib/utils",
+					"category": "utils",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": false,
+					"files": [
+						"utils.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": [
+						"clsx@^2.1.1",
+						"tailwind-merge@^3.3.1"
+					]
+				}
+			]
+		}
+	]
+}
