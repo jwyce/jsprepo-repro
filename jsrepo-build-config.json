@@ -9,6 +9,16 @@
 		"hooks": "$lib/hooks",
 		"utils": "$lib/utils"
 	},
+	"configFiles": [
+		{
+			"name": "app.css",
+			"path": "./src/app.css",
+			"expectedPath": "./src/app.css",
+			"optional": false,
+			"dependencies": [],
+			"devDependencies": ["tailwindcss@^4.1.11", "tw-animate-css@^1.3.4"]
+		}
+	],
 	"dirs": ["./src/lib/components", "./src/lib"],
 	"includeBlocks": [],
 	"includeCategories": ["ui", "blocks", "utils", "hooks"],
@@ -22,4 +32,3 @@
 	"preview": false,
 	"includeDocs": false
 }
-
