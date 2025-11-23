@@ -1,0 +1,5 @@
+@reference "../../../app.css";
+
+div>.name {
+  @apply text-primary font-bold;
+}

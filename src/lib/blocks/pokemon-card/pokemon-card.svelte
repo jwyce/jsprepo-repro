@@ -1,4 +1,5 @@
 <script lang="ts">
+	import './index.css';
 	import * as Card from '$lib/components/ui/card';
 	import { cache } from './cache';
 	import { getPokemon } from './pokemon';
@@ -25,7 +26,7 @@
 					src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
 					alt={pokemon.name}
 				/>
-				<div class="text-center font-medium">{pokemon.name}</div>
+				<div class="name text-center">{pokemon.name}</div>
 				<div class="flex w-full items-center justify-center gap-2">
 					{#each pokemon.types as type}
 						{@const typeId = type.type.url.match(/\/(\d+)\/?$/)?.[1]}
